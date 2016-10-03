@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" class="" g_init="6722">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="description" content="Sverdlovsk movie. Фильм Свердловск.">
+<meta name="keywords" content="Свердловск,фильм,нуар,Sverdlovsk,movie,noir">
+<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"> -->
+
+<title>Sverdlovsk</title>
+
+<link rel="shortcut icon" type="image/gif" href="sonypictures_favicon.ico">
+<link rel="stylesheet" type="text/css" href="css/index.css" media="all">
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="all">
+
+
+    <link rel="stylesheet" href="css/jquery.maximage.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+    <link rel="stylesheet" href="css/screen.css?v=1.2" type="text/css" media="screen" charset="utf-8" />
+    
+    <script type="text/javascript" src="js/jquery-1.7.1.js"></script>
+    
+    <script src="js/jquery.cycle.all.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/jquery.maximage.js" type="text/javascript" charset="utf-8"></script>
+    
+    <script type="text/javascript" charset="utf-8">
+            $(function(){
+                // Trigger maximage
+                jQuery('#maximage').maximage();
+                jQuery('#maximage3').maximage();
+            });
+     </script>
+     <script type="text/javascript" charset="utf-8">
+            $(function(){
+                // Trigger maximage
+                jQuery('#maximage2').maximage({
+                    cssBackgroundSize: false, // We don't want to use background-size:cover for our custom size
+                    backgroundSize: function( $item ){
+                        var verticalOffset = 100, // Top offset + Bottom offset
+                            horizontalOffset = 200; // Left offset + Right offset
+            
+                        if($.Window.data('w') / $.Window.data('h') < $item.data('ar')){ // Image size based on height
+                            $item
+                                .height($.Window.data('h') - verticalOffset)
+                                .width((($.Window.data('h') - verticalOffset) * $item.data('ar')).toFixed(0));
+                        }else{ // Image size based on width
+                            $item
+                                .height((($.Window.data('w') - horizontalOffset) / $item.data('ar')).toFixed(0))
+                                .width($.Window.data('w') - horizontalOffset);
+                        }
+                    },
+                    onImagesLoaded: function(){
+                        jQuery('#maximage2').fadeIn();
+                    }
+                });
+            });
+        </script>
+</head>
+<body>
+
+
+<div style="overflow: hidden; display: block;" id="main_wrapper">
+
+      <div id="galleryLarge">
+           <div style="background-image: url('img/gallery/gallery00.jpg');" id="galleryLargeSlide"></div>
+           <div class="prevArrow"></div>
+           <div class="nextArrow"></div>
+           <div style="display: block;" class="closeBtn"></div>
+           <div id="captionBox"><div class="caption"></div></div>
+      </div>
+
+     
+<!--      
+<img id="bgImg" style="width: 1920px; height: 1280px; left: 0px; top: 0px; position: absolute; display: block;" src="img/main_bg.jpg" alt="background" border="0" height="100" width="100"> 
+-->
+
+      <div id="maximage">
+            <img src="img/main_bg.jpg" alt="" width="1920" height="1280" />
+      </div>
+     
+    
+     
+
+     
+     <div id="social_wrapper">
+          <div class="social_icons" style="background-image: url('img/icon-soc1.png');" alt="Vimeo">
+               <a class="external_link" href="https://vimeo.com/channels/879297" target="_top">Vimeo</a>
+          </div>
+          <div class="social_icons" style="background-image: url('img/icon-soc2.png');" alt="facebook">
+               <a class="external_link" href="https://www.facebook.com/sverdlovsk.noir" target="_top">Facebook</a>
+          </div>
+          <div class="social_icons" style="background-image: url('img/icon-soc3.png');" alt="YouTube">
+               <a class="external_link" href="http://www.youtube.com/channel/UC4Fw5khgn9PdKnOJ4ofY_cg" target="_top">YouTube</a>
+          </div>
+          <div class="social_icons" style="background-image: url('img/icon-soc4.png');" alt="Instagram">
+               <a class="external_link" href="http://instagram.com/sverdlovsk_noir/ " target="_top">Instagram</a>
+          </div>
+     </div>
+     
+              <div id="homePage" >
+                <div class="general">
+                      
+                         <div class="viewport">
+                              <div class="overview">
+                                <!-- <p>premiere <span>14.10.2016</span> at <span>SALUT CINEMA</span></p> -->
+                                <p><span>14.10.2016</span></p>
+                              </div>
+                            </div>
+                            </div>
+              </div>
+               
+               <div id="storyPage" style="display: none;" >
+                   <div id="maximage3">
+                         <img src="img/storybg1.jpg" alt="" width="1920" height="740" />
+                    </div>
+               
+               
+                    <div class="xBtn"></div>
+                    <div class="general">
+                   	 
+
+                         <div class="viewport">
+                              
+
+				         <div style="width: 540px;">
+				         	<img src="img/title.png" alt="" />
+				         	                         <p>"Sverdlovsk" has been filmed with great will, deep love for cinema and due to priceless help of many amazing people.</p>
+				         	
+				         	                         <p>We believe that cinema should be for everyone.
+				         	                            Although, making cinema with only inspiration behind is cost demanding.
+				         	                            You could help Us grow. See the ways how to do it by clicking <a href="Sverdlovsk_Support_List.pdf" target="_blank">here</a> or сontact Us by email: office@famestudio.ru.</p>
+				         	                            
+				         	                            
+				         </div>
+                            
+                         </div>
+                    </div>
+               </div>
+               
+               <div id="castPage" style="display: none;" >
+                   
+
+                    <div id="maximage2">
+                         <img src="img/storybg3.png" alt="" width="100%" height="760" />
+                    </div>
+               
+                    <div class="xBtn"></div> 
+<!--                     <div class="text">
+                              	<img src="img/title2.png" alt="" />
+                    </div> -->
+                    <div class="general">
+                    	
+                         <div class="viewport">
+                              <div class="overview">
+                              
+                             
+                              
+                              		<p>starring  <span>KIRILL KOZLOV    KONSTANTIN RUDENKO   LUDA KOROLEVA<br />
+                                    ALEXANDER SERGEEV  ALEXANDER FUKALOV  ASHOT KARAPETIAN   RUSLAN KITAYGORODSKY  ANTON BUTAKOV</span> <br />
+                              			 feat. <span>VLADIMIR BEGUNOV</span> as himself<br />
+                                    spesial guest <span>STAS SLOVIKOVSKY</span></p>
+                                     
+                              		 
+                              		<p>visual effects supervisor <span>KIRILL KUROV  PASHA YUNUSOV  TEIMUR KHALIKOV</span> <br />
+                              			production base chef <span>ANTON ANDRONOV  SLAVA MOTOV  DMITRIY KUNILOV</span><br />
+                                    sound operator <span>ANTON KALMYKOV  PAVEL ORLOV</span> digital sound editor <span>EKATERINA DOROGINA</span><br />
+                                    sound supervisor <span>BORIS FROLOV  DANIIL TISHINSKIH</span><br />
+                                    composed by <span>VOVA SINIY </span>and<span> “BPR”</span><br />
+                                    production designer <span>POLINA LAPTEVA</span> editor <span>MILA REPA</span><br />
+                                    hairstyles <span>OLGA LAVKERT</span> makeup <span>YULIA STEPINA</span> and<span> ELENA NEROVNAYA</span><br />
+                                    costume design <span>MARINA ODNOSHEVINA MARINA WELZ</span><br />
+                                    cast by <span>VYACHESLAV BORISENKO DARIA PETROVA</span> director of photography<span> STAS LOSEV</span><br />
+                                    produced and directed by <span>IGNAT KUNILOV and IRINA KOLOTOVA</span><br />
+                                    <p>THANKS TO <span>IGOR PETROV and ROMAN VAZHENIN</span></p><br />
+                                    <p>great thanks to <span>ALL WHO TOOK PART</span><br />
+                                    you are AWESOME</p><br />                              
+                              </div>
+                         </div>
+                    </div>
+                    
+                    
+               </div>
+               
+
+                              
+     <div style="" id="nav_wrapper">
+          <ul id="nav">
+               <li id="trailer_nav"> 
+                    <div class="navLabel">
+                    	<span>
+                        	<div class="navStory">Trailer</div>
+                        </span>
+                    </div>
+
+               </li>
+               <li id="castCrew_nav">
+                    <div class="navLabel">
+                    	<span><div class="navStory">Team</div></span>
+                    </div>
+
+               </li>
+               <li id="gallery_nav">
+                    <div class="navLabel">
+                    	<span><div class="navStory">Gallery</div></span>
+                    </div>
+                    <div class="content">
+                         <ul id="gallery">
+                              <li class="showing">
+                                <img src="img/gallery/gallery00.jpg" alt="gallery image" data-caption="
+                                <b>Don't you know?</b><br/>
+                                The armature of the <b>Stature of Liberty</b><br/> is made of metal produced in Ekaterinburg" border="0">
+                              </li>
+                              <li>
+                                <img src="img/gallery/gallery0.jpg" alt="gallery image" 
+                                data-caption="
+                                <b>Ekaterinburg, Sverdlovsk region.</b><br/>
+                                   Twice the city was named as Ekaterinburg and one time - as Sverdlovsk.<br/>
+                                   In parlance they still say “Sverdlovsk”, even the region is <br/>
+                                   <b>still “the Sverdlovsk region”.</b>" border="0">
+                              </li>
+                              <li>
+                                <img src="img/gallery/gallery1.jpg" alt="gallery image" 
+                                data-caption="
+                                Ekaterinburg was founded by the first Russian Emperor, and it was named<br/>  
+                                after the first Empress.The last <b>Russian Emperor was killed there.</b><br/> 
+                                The first Russian President started his political activity there." border="0">
+                              </li>                         
+                              <li>
+                                <img src="img/gallery/gallery2.jpg" alt="gallery image" data-caption="<b>“We still</b> can handle each other”<br/>det. Begunov" border="0">
+                              </li>                         
+                              <li>
+                                <img src="img/gallery/gallery3.jpg" alt="gallery image" data-caption="
+                                	<b>In 1963</b>, when <b>Fidel Castro</b> visited the Urals' capital,<br/> eleven newborns named Fidel were registered." border="0">
+                              </li>                         
+                              <li>
+                                <img src="img/gallery/gallery4.jpg" alt="gallery image" data-caption="
+                               <b> “Attention, Moscow speaking”</b> <br/>
+                               The most powerful radio transmitter in the country was located in Sverdlovsk.<br/>
+                               The famous Levitan's words actually sounded from Sverdlovsk. " border="0">
+                              </li>                         
+                              <li>
+                                <img src="img/gallery/gallery5.jpg" alt="gallery image" data-caption="
+                                <b>The Ekaterinburg subway</b> has been listed in the <b>Guinness<br/>
+                                 Book of World Records</b> as the shortest acting subway in the world.<br/> 
+                                However, few people know that the <b>ghost-stations exist</b>, <br/>
+                                for example, Bazhovskaya, named after the Urals' fairy tale writer." border="0">
+                              </li>                         
+                              <li>
+                                <img src="img/gallery/gallery6.jpg" alt="gallery image" data-caption="
+                                	Ekaterinburg is listed in the <b>Guinness Book of World Records</b><br/>
+                                	as the city with the biggest consumptions of mayonnaise per capita." border="0">
+                              </li>                         
+                              <li class="last">
+                                <img src="img/gallery/gallery7.jpg" alt="gallery image" data-caption="<span class='oLast'>
+                                	<b>In 1820  the British Parlament's roof</b> was covered by the roof<br/> 
+                                	 steel made in Ekaterinburg. During 150 years<br/> there was no need 
+                                	to repair or paint the roof even once.</span>" border="0">
+                              </li>                         
+                         </ul>
+
+
+                         <div class="prevArrow"></div>
+                         <div class="nextArrow"></div>
+                         <div id="captionBox"></div>
+                         <div class="caption">«Я обещал своим парням,<br>что мы выживем» <br>— Сержант Кольер</div>
+                    </div>
+               </li>
+               <li id="story_nav">
+                    <div class="navLabel">
+                        <span>
+                            <div class="navStory">Support Us</div> 
+                        </span>
+                    </div>
+
+               </li>
+          </ul>
+     </div>
+     
+
+          
+
+
+
+
+
+    <!-- video gallery overlay player--> 
+    <a id="trailerOverlayTrigger" href="#videoGallery_wrapper" style="display:none;"></a>
+    <div id="videoGallery_wrapper">
+         <div id="videoGallery_player">
+             <!-- <object width="100%" height="100%">
+             <param name="allowfullscreen" value="true" />
+             <param name="allowscriptaccess" value="always" />
+             <param name="movie" value="https://www.youtube.com/watch?v=8Fw3VYVZLJc" /><embed src="https://www.youtube.com/embed/8Fw3VYVZLJc" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="100%" height="100%"></embed></object>  -->
+             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/8Fw3VYVZLJc" frameborder="0" allowfullscreen></iframe>
+         </div>
+    </div>
+
+
+	          
+
+</div>
+     <div id="footer_wrapper">
+          <div id="footer_content">
+               <div id="studio_wrapper">
+                    <a href="http://www.famestudio.ru/"><img src="img/patner1.png" alt="" /></a>
+                    <a href="http://fashionmonday.ru/"><img src="img/patner2.png" alt="" /></a>
+                    <a href="http://pro4pro.ru/"><img src="img/patner3.png" alt="" /></a>
+                    <a href="http://slavamotov.com/ "><img src="img/patner4.png" alt="" /></a>
+               </div>
+               <p>2016 Fame Studio Production ltd. All rights reserved.  <a href="http://www.famestudio.ru/">www.famestudio.ru</a> </p>
+          </div>
+     </div>
+
+
+
+<script type="text/javascript">
+	var __lightBoxCloseLabel = "";
+    var __youtubeTrailerId = "8Fw3VYVZLJc";
+	var __isDesktop = true;
+	var __rootURL = "";
+	var __isIE8 = ""
+castPage
+</script>
+
+
+<script src="js/createjs-2013.12.12.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/fastclick.js"></script>
+<script type="text/javascript" src="js/jquery.tinyscrollbar.js"></script>
+<script type="text/javascript" src="js/jquery.videobg.js"></script>
+<script type="text/javascript" src="js/sharing.js"></script>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

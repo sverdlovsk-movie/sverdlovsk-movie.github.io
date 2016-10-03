@@ -1,0 +1,140 @@
+@font-face {
+    font-family: 'cond_probold';
+    src: url('../font/pfdintextcondpro-bold-webfont.eot');
+    src: url('../font/pfdintextcondpro-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro-bold-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cond_proBdIt';
+    src: url('../font/pfdintextcondpro-boldital-webfont.eot');
+    src: url('../font/pfdintextcondpro-boldital-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro-boldital-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro-boldital-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cond_proThIt';
+    src: url('../font/pfdintextcondpro-thinital-webfont.eot');
+    src: url('../font/pfdintextcondpro-thinital-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro-thinital-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro-thinital-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cond_proitalic';
+    src: url('../font/pfdintextcondpro-italic-webfont.eot');
+    src: url('../font/pfdintextcondpro-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro-italic-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro-italic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cond_prolight';
+    src: url('../font/pfdintextcondpro-light-webfont.eot');
+    src: url('../font/pfdintextcondpro-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro-light-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cond_promedium';
+    src: url('../font/pfdintextcondpro-medium-webfont.eot');
+    src: url('../font/pfdintextcondpro-medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro-medium-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cond_proXBlk';
+    src: url('../font/pfdintextcondpro-xblack-webfont.eot');
+    src: url('../font/pfdintextcondpro-xblack-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro-xblack-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro-xblack-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cond_proLtIt';
+    src: url('../font/pfdintextcondpro-lightital-webfont.eot');
+    src: url('../font/pfdintextcondpro-lightital-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro-lightital-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro-lightital-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cond_proregular';
+    src: url('../font/pfdintextcondpro-regular-webfont.eot');
+    src: url('../font/pfdintextcondpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro-regular-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cond_proMdIt';
+    src: url('../font/pfdintextcondpro-medital-webfont.eot');
+    src: url('../font/pfdintextcondpro-medital-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro-medital-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro-medital-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'cond_prothin';
+    src: url('../font/pfdintextcondpro-thin-webfont.eot');
+    src: url('../font/pfdintextcondpro-thin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro-thin-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro-thin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cond_proXBlkIt';
+    src: url('../font/pfdintextcondpro-xblackital-webfont.eot');
+    src: url('../font/pfdintextcondpro-xblackital-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro-xblackital-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro-xblackital-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cond_proXThIt';
+    src: url('../font/pfdintextcondpro-xthinital-webfont.eot');
+    src: url('../font/pfdintextcondpro-xthinital-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro-xthinital-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro-xthinital-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'cond_proXTh';
+    src: url('../font/pfdintextcondpro-xthin-webfont.eot');
+    src: url('../font/pfdintextcondpro-xthin-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../font/pfdintextcondpro-xthin-webfont.woff') format('woff'),
+         url('../font/pfdintextcondpro-xthin-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}

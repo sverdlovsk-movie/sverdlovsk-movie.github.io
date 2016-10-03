@@ -116,8 +116,11 @@ div { margin: 0px; padding: 0px; }
 /*#homePage .general { left: 50%;margin-top: 500px;position: absolute;top: 50%;width: 950px;}*/
 /*#homePage .viewport { width: 950px;  position: relative;   margin: 0 0 0 -475px;}*/
 #homePage>.text img {text-align: center; padding-bottom: 10px;}
-#homePage>.general>.viewport>.overview p { font-family: 'cond_prothin';  /*font-size: 20px;line-height: 21px;*/font-size: 60px;line-height: 66px;padding-bottom: 13px; text-align: center;}
-#homePage>.general>.viewport>.overview p span {font-family: 'cond_proregular';}
+#homePage>.general>.viewport>.overview p { font-family: 'cond_prothin'; /*font-size: 20px;line-height: 21px;*/font-size: 60px; /*line-height: 66px;*/ padding-top: 13px; text-align: center;}
+#homePage>.general>.viewport>.overview p span {font-family: 'cond_proregular'; font-size: 40px;}
+#homePage>.general>.viewport>.overview p a {font-family: 'cond_proregular'; font-size: 25px; line-height: 27px;}
+#homePage>.general>.viewport>.overview p a:visited, a:link, a:active, a:hover {color: white; text-decoration-style: dashed;}
+/*#homePage>.general>.viewport>.overview p a:hover {text-decoration: underline; text-decoration-style: dashed;}*/
 #homePage .xBtn { top: 100px; right: 10px; }
 
 #maximage2 img {width: 100% !important; margin-left: 0 !important;}
@@ -128,7 +131,7 @@ div { margin: 0px; padding: 0px; }
 .content .overview { list-style: outside none none; padding: 0px;  }
 
 #galleryLarge { width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; border: 0px solid yellow; background-position: center center; background-size: cover; display: none; z-index: 8888; }
-#galleryLargeSlide { width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; border: 0px solid yellow; background-position: center top; background-size: cover; background-repeat: no-repeat; }
+#galleryLargeSlide { width: 100%; height: 100%; position: absolute; top: 0px; left: 0px; border: 0px solid yellow; background-position: center top; background-size: contain; background-repeat: no-repeat; }
 
 #galleryLarge .prevArrow { z-index: 8888; width: 50px; height: 168px; position: absolute; top: 50%; left: 0px; border: 0px solid red; background: url('../img/arrowleft.png') no-repeat scroll 0px 50% transparent; cursor: pointer; margin-top: -100px; }
 #galleryLarge .prevArrow:hover { background-position: -50px 50%; }

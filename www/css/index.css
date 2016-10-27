@@ -80,10 +80,12 @@ div { margin: 0px; padding: 0px; }
 .navTrailer { height: 13px; width: 80px; cursor: pointer; margin: 0px auto; }
 
 .navCrew { height: 14px; width: auto; cursor: pointer; margin: 0px auto; }
+.navPlot { height: 14px; width: auto; cursor: pointer; margin: 0px auto; }
 .navGallery { height: 14px; width: 88px; cursor: pointer; margin: 0px auto; }
 .navTrailer:hover { background-position: 0px -13px; }
 .navStory:hover { background-position: 0px -14px; }
 .navCrew:hover { background-position: 0px -14px; }
+.navPlot:hover { background-position: 0px -14px; }
 .navGallery:hover { background-position: 0px -14px; }
 
 .contentHeader { width: 100%; height: 39px; margin: 0px auto 20px; position: relative; top: 0px; left: 0px; border: 0px solid blue; font-family: "Exo 2",sans-serif; font-size: 28px; font-weight: 900; color: rgb(255, 230, 41); letter-spacing: 1px; line-height: 42px; text-align: center; }
@@ -92,6 +94,7 @@ div { margin: 0px; padding: 0px; }
 
 
 .maximage2 img {width: 100%; position: absolute;}
+.maximage2_ img {width: 100%; position: absolute;}
 
 #storyPage { width: 100%; position: absolute;   display: block; top:0;  }
 #storyPage .general { margin: auto; height: 350px;left: 50%; width: 950px;position: absolute; }
@@ -110,6 +113,13 @@ div { margin: 0px; padding: 0px; }
 #castPage>.general>.viewport>.overview p span {font-family: 'cond_proregular';}
 #castPage .xBtn { top: 100px; right: 10px; }
 
+#plotPage { width: 100%;  position: absolute;  display: block; overflow: hidden; top: 0;}
+#plotPage .general { left: 50%;margin-top: -100px;position: absolute;top: 50%;width: 950px;}
+#plotPage .viewport { width: 950px;  position: relative;   margin: 0 0 0 -475px;}
+#plotPage>.text img {text-align: center; padding-bottom: 10px;}
+#plotPage>.general>.viewport>.overview p { font-family: 'cond_prothin';  font-size: 20px;line-height: 21px;padding-bottom: 13px; text-align: center;}
+#plotPage>.general>.viewport>.overview p span {font-family: 'cond_proregular';}
+#plotPage .xBtn { top: 100px; right: 10px; }
 
 /*hacks by Rast*/
 #homePage { width: 100%;  position: absolute;  display: block; overflow: hidden; top:60%; /*margin-top: 700px;*/}
@@ -124,6 +134,7 @@ div { margin: 0px; padding: 0px; }
 #homePage .xBtn { top: 100px; right: 10px; }
 
 #maximage2 img {width: 100% !important; margin-left: 0 !important;}
+#maximage2_ img {width: 100% !important; margin-left: 0 !important;}
 
 .content { margin: 0px auto; position: relative; top: 50%; left: 0px; text-align: justify; }
 .content .viewport { width: 650px; height: 470px; position: relative; margin: -200px 0px 0px; }

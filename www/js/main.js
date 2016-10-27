@@ -219,9 +219,9 @@ initSite = function(){
 }
 
 initCustomScrollBars = function(){
-/* 	$("#storyPage .content, #castPage .content").tinyscrollbar({thumbSize:0}); */
+/* 	$("#storyPage .content, #castPage .content, #plotPage .content").tinyscrollbar({thumbSize:0}); */
 	
-	$("#storyPage, #castPage").css({"display":"none"});
+	$("#storyPage, #castPage, #plotPage").css({"display":"none"});
 }
 
 
@@ -262,7 +262,7 @@ deeplinkHandler = function(){
 initNav = function(){
 	
 	// reset for both large and small modes
-	$("#trailer_nav .navLabel, #story_nav .navLabel, #castCrew_nav .navLabel, #gallery_nav .navLabel, #home_content .closeBtn, .trailerBtn, #cornerLogo").unbind("click");
+	$("#trailer_nav .navLabel, #story_nav .navLabel, #castCrew_nav .navLabel, #plot_nav .navLabel, #gallery_nav .navLabel, #home_content .closeBtn, .trailerBtn, #cornerLogo").unbind("click");
 	
 	// add listeners depending on the mode
 	if(__sizeMode == "large"){
@@ -285,6 +285,15 @@ $('#overlay').animate({"opacity":.8});
 			if(typeof sCode !== 'undefined') sCode.trackPageView("story.html")
 		});
 		
+		$("#plot_nav .navLabel").click(function(){
+			showLargeSection("plot");
+			
+			$(this).addClass("selected");
+			
+			if(typeof sCode !== 'undefined') sCode.trackPageView("plot.html");
+			
+		});
+
 		$("#castCrew_nav .navLabel").click(function(){
 			showLargeSection("castCrew");
 			
@@ -334,6 +343,13 @@ $('#overlay').animate({"opacity":.8});
 			if(typeof sCode !== 'undefined') sCode.trackPageView("story.html")
 		}));
 		
+		$("#plot_nav .navLabel").bind("click", (function(){
+			smallNavClickHandler(this);	
+			//$(this).addClass("selected");
+			
+			if(typeof sCode !== 'undefined') sCode.trackPageView("plot.html");
+		}));
+
 		$("#castCrew_nav .navLabel").bind("click", (function(){
 			smallNavClickHandler(this);	
 			//$(this).addClass("selected");
@@ -353,7 +369,7 @@ $('#overlay').animate({"opacity":.8});
 showLargeSection = function(section){
 	$(".navLabel.selected").removeClass("selected");
 	
-	$("#trailerPage, #storyPage, #castPage, #homePage, #galleryLarge").stop(true,false).animate({"opacity":"0"},function(){
+	$("#trailerPage, #storyPage, #castPage, #plotPage, #homePage, #galleryLarge").stop(true,false).animate({"opacity":"0"},function(){
 		
 		$(this).css({"display":"none"});
 		
@@ -371,6 +387,13 @@ showLargeSection = function(section){
 				});
 				break;
 			
+			case "plot":
+				$("#plotPage").css({"opacity":"0", "display":"block"}).stop(true,false).animate({opacity:1}, function(){
+/* 					$("#plotPage .content").data("plugin_tinyscrollbar").update(); */
+					$("#sideBar_wrapper").css({"opacity":"1", "display":"block"}).stop(true,false).animate({opacity:.2});
+				});
+				break;
+
 			case "castCrew":
 				$("#castPage").css({"opacity":"0", "display":"block"}).stop(true,false).animate({opacity:1}, function(){
 /* 					$("#castPage .content").data("plugin_tinyscrollbar").update(); */
@@ -440,7 +463,7 @@ collapseAllSmallContent = function(){
 	
 	// remove marker from selected nav item
 	$('.selected').removeClass("selected");
-	$("#trailer_nav, #story_nav, #gallery_nav, #castCrew_nav").stop(true, false).css({"height":"50px"});
+	$("#trailer_nav, #story_nav, #gallery_nav, #castCrew_nav, #plot_nav").stop(true, false).css({"height":"50px"});
 }
 
 
@@ -576,7 +599,7 @@ resizeBodyHeight = function(){
 		$("#legalSlide_wrapper").css({"display":"none"});
 		
 		// hide all large content
-		$("#trailerPage, #homePage, #castPage, #storyPage, #galleryLarge").css({"display":"none"});
+		$("#trailerPage, #homePage, #castPage, #plotPage, #storyPage, #galleryLarge").css({"display":"none"});
 		
 		
 	}

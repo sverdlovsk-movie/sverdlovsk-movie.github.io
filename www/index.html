@@ -24,14 +24,15 @@
     <script type="text/javascript" charset="utf-8">
             $(function(){
                 // Trigger maximage
-                jQuery('#maximage').maximage();
-                jQuery('#maximage3').maximage();
+                
             });
      </script>
      <script type="text/javascript" charset="utf-8">
             $(function(){
                 // Trigger maximage
-                jQuery('#maximage2, #maximage2_').maximage({
+				jQuery('#maximage').maximage();
+                jQuery('#maximage3').maximage();
+                jQuery('#maximage2').maximage({
                     cssBackgroundSize: false, // We don't want to use background-size:cover for our custom size
                     backgroundSize: function( $item ){
                         var verticalOffset = 100, // Top offset + Bottom offset
@@ -48,9 +49,10 @@
                         }
                     },
                     onImagesLoaded: function(){
-                        jQuery('#maximage2, #maximage2_').fadeIn();
+                        jQuery('#maximage2').fadeIn();
                     }
                 });
+				
             });
         </script>
 </head>
@@ -100,9 +102,6 @@
                       
                          <div class="viewport">
                               <div class="overview">
-                                <!-- <p>premiere <span>14.10.2016</span> at <span>SALUT CINEMA</span></p> -->
-                                <p><span>С 27 ОКТЯБРЯ</span></p>
-                                <p><a href="http://www.kinosalut.ru/films/3775" target="_blank">в кинотеатре САЛЮТ</a></p>
                               </div>
                             </div>
                             </div>
@@ -138,7 +137,7 @@
                <div id="plotPage" style="display: none;" >
                    
 
-                    <div id="maximage2_">
+                    <div id="maximage2">
                          <img src="img/storybg3.png" alt="" width="100%" height="760" />
                     </div>
                
@@ -152,8 +151,8 @@
                               <div class="overview">
                               
                              
-                              
-                                  <p>You could find more details here <span>LATER</span></p>
+                              <p>Aloofness of the city filled its courtyards and streets. Sverdlovsk was no exception, as well as the characters in the film. Fedor feels quite confident in the role he has chosen for himself. With Boris and Iskra, they moved up the "career" ladder. The crimes become bold and careless. However, the more the characters feel that such stories have no happy ending, the more inevitable it becomes.</p>
+                                  <p><span>Have you ever been to Sverdlovsk?</span></p>
                                      
                                    
                                   
@@ -167,7 +166,7 @@
                <div id="castPage" style="display: none;" >
                    
 
-                    <div id="maximage2">
+                    <div id="maximage4">
                          <img src="img/storybg3.png" alt="" width="100%" height="760" />
                     </div>
                
@@ -352,7 +351,7 @@
                     <a href="http://pro4pro.ru/"><img src="img/patner3.png" alt="" /></a>
                     <a href="http://slavamotov.com/ "><img src="img/patner4.png" alt="" /></a>
                </div>
-               <p>2016 Fame Studio Production ltd. All rights reserved.  <a href="http://www.famestudio.ru/">www.famestudio.ru</a> </p>
+               <p>2017 Fame Studio Production ltd. All rights reserved.  <a href="http://www.famestudio.ru/">www.famestudio.ru</a> </p>
           </div>
      </div>
 

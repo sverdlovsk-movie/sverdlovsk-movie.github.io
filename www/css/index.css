@@ -106,7 +106,7 @@ div { margin: 0px; padding: 0px; }
 /* #storyPage .xBtn {top: 20px !important; right: 340px !important; background-image: url('../img/xbtn1.png') !important ;} */
 
 #castPage { width: 100%;  position: absolute;  display: block; overflow: hidden; top: 0;}
-#castPage .general { left: 50%;margin-top: -100px;position: absolute;top: 50%;width: 950px;}
+#castPage .general { left: 50%;margin-top: -100px;position: absolute;top: 40%;width: 950px;}
 #castPage .viewport { width: 950px;  position: relative;   margin: 0 0 0 -475px;}
 #castPage>.text img {text-align: center; padding-bottom: 10px;}
 #castPage>.general>.viewport>.overview p { font-family: 'cond_prothin';  font-size: 20px;line-height: 21px;padding-bottom: 13px; text-align: center;}

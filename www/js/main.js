@@ -239,7 +239,7 @@ deeplinkHandler = function(){
 	if ( __sizeMode == "large" ) {
 		if ( !h ) {
 			$("#home_nav .navLabel").click();
-			//$('#trailerOverlayTrigger').click();
+			$('#movieOverlayTrigger').click();
 			trace("!h");
 		} else {
 			//__needsIntro = false;
@@ -262,18 +262,21 @@ deeplinkHandler = function(){
 initNav = function(){
 	
 	// reset for both large and small modes
-	$("#trailer_nav .navLabel, #story_nav .navLabel, #castCrew_nav .navLabel, #plot_nav .navLabel, #gallery_nav .navLabel, #home_content .closeBtn, .trailerBtn, #cornerLogo").unbind("click");
+	$("#movie_nav, #trailer_nav, #story_nav .navLabel, #castCrew_nav .navLabel, #plot_nav .navLabel, #gallery_nav .navLabel, #home_content .closeBtn, .trailerBtn, #cornerLogo").unbind("click");
 	
 	// add listeners depending on the mode
 	if(__sizeMode == "large"){
-		$(".trailerBtn, #trailer_nav .navLabel, #sideBar_wrapper, .sideBar_small").bind("click", (function(){
+		$("#movie_nav").bind("click", (function(){
+			showLargeSection("movie");
+			$("#movieOverlayTrigger").click();
+			$(this).addClass("selected");
+			if(typeof sCode !== 'undefined') sCode.trackVideo('movie','start');
+		}));
+		
+		$("#trailer_nav").bind("click", (function(){
 			showLargeSection("trailer");
 			$("#trailerOverlayTrigger").click();
 			$(this).addClass("selected");
-/*
-$("#overlay").css({"display":"block"});
-$('#overlay').animate({"opacity":.8});
-*/
 			if(typeof sCode !== 'undefined') sCode.trackVideo('trailer','start');
 		}));
 		
@@ -326,14 +329,10 @@ $('#overlay').animate({"opacity":.8});
 	if(__sizeMode == "small"){
 		
 		// add event listeners
-		$("#navTrailer, .trailerBtn, #trailer_nav .navLabel, #sideBar_wrapper, .sideBar_small").bind("click", (function(){
-			$("#trailerOverlayTrigger").click();
-/* 			smallNavClickHandler(this);	 */
-			
+		$("#movie_nav").bind("click", (function(){
+			$("#movieOverlayTrigger").click();
 			$(this).addClass("selected");
-/* 			$(this).addClass("mobileHover"); */
-		
-			if(typeof sCode !== 'undefined') sCode.trackVideo('trailer','start');
+			if(typeof sCode !== 'undefined') sCode.trackVideo('movie','start');
 		}));
 		
 		$("#story_nav .navLabel").bind("click", (function(){
@@ -369,7 +368,7 @@ $('#overlay').animate({"opacity":.8});
 showLargeSection = function(section){
 	$(".navLabel.selected").removeClass("selected");
 	
-	$("#trailerPage, #storyPage, #castPage, #plotPage, #homePage, #galleryLarge").stop(true,false).animate({"opacity":"0"},function(){
+	$("#trailerPage, #moviePage, #storyPage, #castPage, #plotPage, #homePage, #galleryLarge").stop(true,false).animate({"opacity":"0"},function(){
 		
 		$(this).css({"display":"none"});
 		
@@ -403,7 +402,12 @@ showLargeSection = function(section){
 
 			case "trailer":
 				$("#trailerPage").css({"opacity":"0", "display":"block"}).stop(true,false).animate({opacity:1}, function(){
-/* 					$("#trailerPage .content").data("plugin_tinyscrollbar").update(); */
+					$("#sideBar_wrapper").css({"opacity":"1", "display":"block"}).stop(true,false).animate({opacity:.2});
+				});
+				break;
+				
+			case "movie":
+				$("#moviePage").css({"opacity":"0", "display":"block"}).stop(true,false).animate({opacity:1}, function(){
 					$("#sideBar_wrapper").css({"opacity":"1", "display":"block"}).stop(true,false).animate({opacity:.2});
 				});
 				break;
@@ -463,7 +467,7 @@ collapseAllSmallContent = function(){
 	
 	// remove marker from selected nav item
 	$('.selected').removeClass("selected");
-	$("#trailer_nav, #story_nav, #gallery_nav, #castCrew_nav, #plot_nav").stop(true, false).css({"height":"50px"});
+	$(".video, #story_nav, #gallery_nav, #castCrew_nav, #plot_nav").stop(true, false).css({"height":"50px"});
 }
 
 
@@ -599,7 +603,7 @@ resizeBodyHeight = function(){
 		$("#legalSlide_wrapper").css({"display":"none"});
 		
 		// hide all large content
-		$("#trailerPage, #homePage, #castPage, #plotPage, #storyPage, #galleryLarge").css({"display":"none"});
+		$("#trailerPage, #moviePage, #homePage, #castPage, #plotPage, #storyPage, #galleryLarge").css({"display":"none"});
 		
 		
 	}
@@ -762,6 +766,17 @@ showTargetSlide = function(){
 initVideoGallery = function(){
 	trace("init video gallery");
 	
+	$('#movieOverlayTrigger').fancybox({
+		openEffect  : 'fade',
+		closeEffect : 'fade',
+		width : "100%",
+		height : "100%",
+		autoSize : false,
+		margin : [50, 0, 50, 0],
+		padding : 0,
+		scrolling : 'no'
+		});	
+		
 	$('#trailerOverlayTrigger').fancybox({
 		openEffect  : 'fade',
 		closeEffect : 'fade',

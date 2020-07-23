@@ -239,7 +239,7 @@ deeplinkHandler = function(){
 	if ( __sizeMode == "large" ) {
 		if ( !h ) {
 			$("#home_nav .navLabel").click();
-			$('#movieOverlayTrigger').click();
+			$('#trailerOverlayTrigger').click();
 			trace("!h");
 		} else {
 			//__needsIntro = false;
